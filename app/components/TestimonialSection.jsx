@@ -50,7 +50,7 @@ const TestimonialSection = () => {
             <p>B.R. am 10.03.2022</p>
           </div>
         </div>
-        <div className={`${roboto.className} text-lg hidden sm:flex sm:flex-col sm:w-1/2`}>
+        <div className={`${roboto.className} text-lg hidden sm:flex sm:flex-col sm:w-1/2 font-light`}>
           <p>
             "Gleich bei der ersten Therapiesitzung haben wir uns sofort wohlgefühlt. Herr Zimmermann
             besitzt eine große Empathie. Bei den oftmals doch sehr emotionalen Gesprächen, agierte

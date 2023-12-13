@@ -10,11 +10,11 @@ const Navbar = () => {
           <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
       </div>
-      <div className='flex items-center gap-3'>
-        <Link href="#">
+      <div className='flex items-center gap-3 sm:gap-7 sm:font-light sm:text-base'>
+        <Link href="/">
           <span className='hover:underline cursor-pointer'>Home</span>
         </Link>
-        <Link href="#">
+        <Link href="/ueber-micht">
           <span className='hover:underline cursor-pointer'>Über micht</span>
         </Link>
         <Link href="#">
