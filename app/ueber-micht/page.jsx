@@ -84,7 +84,7 @@ const Page = () => {
       </div>
 
       {/* follow the way */}
-      <div className='bg-[#A0A0A0] h-full pb-20 my-20 sm:flex'>
+      <div className='bg-[#A0A0A0] h-full pb-20 sm:pb-0 my-20 sm:flex'>
         <div className='h-[800px] sm:flex sm:flex-1'>
           <Image src={Landscape} alt="Landscape" className='w-full h-full object-cover object-center' />
         </div>

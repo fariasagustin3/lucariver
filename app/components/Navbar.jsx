@@ -17,7 +17,7 @@ const Navbar = () => {
         <Link href="/ueber-micht">
           <span className='hover:underline cursor-pointer'>Über micht</span>
         </Link>
-        <Link href="#">
+        <Link href="/preise-kontakt">
           <span className='hover:underline cursor-pointer'>Preise/Kontakt</span>
         </Link>
       </div>

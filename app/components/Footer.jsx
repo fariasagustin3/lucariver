@@ -15,13 +15,13 @@ const Footer = () => {
         />
       </div>
       <div className='flex flex-col justify-center items-center gap-5'>
-        <Link href="#">
+        <Link href="/impressum">
           <span className='underline'>Impressum</span>
         </Link>
-        <Link href="#">
+        <Link href="/datenschutz">
           <span className='underline'>Datenschutz</span>
         </Link>
-        <Link href="#">
+        <Link href="/cookie-einstellungen">
           <span className='underline'>Cookie-Einstellungen</span>
         </Link>
       </div>
