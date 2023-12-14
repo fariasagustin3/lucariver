@@ -47,7 +47,7 @@ const Page = () => {
         <div className='sm:flex sm:flex-col sm:flex-1'>
 
           {/* logo */}
-          <div className='flex justify-center sm:items-start py-20 -mt-48'>
+          <div className='flex justify-center sm:items-start py-20 sm:-mt-48'>
             <Image src={Logo} alt="logo" className='w-60 h-40 sm:w-80 sm:h-full' />
           </div>
 
