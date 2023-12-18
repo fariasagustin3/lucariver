@@ -9,8 +9,10 @@ import Footer from '../components/Footer';
 
 const Page = () => {
   return (
-    <div className='w-screen h-full overflow-x-hidden'>
-      <Navbar />
+    <div className='w-screen h-full overflow-x-hidden pt-20'>
+      <div className='fixed top-0'>
+        <Navbar />
+      </div>
       <div className='sm:flex sm:flex-row sm:items-center sm:px-20'>
 
         <div className='sm:flex sm:flex-col sm:flex-1'>

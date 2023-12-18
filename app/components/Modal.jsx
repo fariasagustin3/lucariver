@@ -23,8 +23,8 @@ const Modal = ({ open, setOpen }) => {
         </Link>
       </div>
       <div className='flex flex-col items-start gap-5 mt-5'> 
-        <ToggleSwitch label="Unbedingt erforderlich" selected={true} link="cloudflare" />
-        <ToggleSwitch label="Performance" selected={false} link="google-analytics" />
+        <ToggleSwitch label="Unbedingt erforderlich" selected={true} link="cloudflare" showArrow />
+        <ToggleSwitch label="Performance" selected={false} link="google-analytics" showArrow />
       </div>
       <div className='flex flex-col gap-3 mt-6'>
         <button onClick={() => setOpen(false)} className='text-sm w-full bg-black text-white py-3 sm:py-5'>Alle akzeptieren</button>

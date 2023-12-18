@@ -3,12 +3,13 @@ import React from 'react';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import { raleway, roboto } from '../fonts';
+import ToggleSwitch from '../components/ToggleSwitch';
 
 const Page = () => {
   return (
     <div className=''>
       <Navbar />
-      <div className='flex flex-col px-10 sm:px-80 mt-14'>
+      <div className='flex flex-col px-10 sm:px-80 mt-14 pt-20 sm:py-32'>
         <div>
           <h1 className={`${raleway.className} text-lg sm:text-3xl font-light`}>Cookie-Richtlinie</h1>
           <p className={`${roboto.className} text-base sm:text-lg font-light`}>
@@ -35,12 +36,10 @@ const Page = () => {
 
         <div className='flex flex-col items my-5 gap-5'>
           <div className='flex flex-row items-center gap-5'>
-            <input type='checkbox' id="Unbedingt-erforderlich" />
-            <label htmlFor="Unbedingt-erforderlich">Unbedingt erforderlich</label>
+            <ToggleSwitch label="Unbedingt erforderlich" showArrow={false} />
           </div>
           <div className='flex flex-row items-center gap-5'>
-            <input type='checkbox' id="Performance" />
-            <label htmlFor="Performance">Performance</label>
+            <ToggleSwitch label="Performance" showArrow={false} selected />
           </div>
         </div>
 
@@ -56,9 +55,8 @@ const Page = () => {
         </div>
 
         <div className='bg-[#F9F9F9] px-5'>
-          <div className='flex flex-row items-center gap-3 my-5'>
-            <input type='checkbox' id="cloudflare" />
-            <label htmlFor="cloudflare">Cloudflare</label>
+          <div className='flex flex-row items-center gap-3 my-5' id="cloudflare">
+            <ToggleSwitch label="Cloudflare" showArrow={false} selected />
           </div>
           <p className={`${roboto.className} text-base sm:text-lg font-extralight text-[#828384] ml-5 my-5 px-5`}>
             Cloudflare ist ein Dienst, der die Sicherheit und Geschwindigkeit von Webseiten erhöht.
@@ -69,11 +67,11 @@ const Page = () => {
             __cfruid (Speicherdauer: Session), __cf_bm (Speicherdauer: 30 Minuten), __cf_clearance
             (Speicherdauer: 30 Minuten)
           </p>
-          <div className='flex flex-row items-center my-5 gap-5 underline'>
-            <Link href="#">
+          <div className='flex flex-row items-center my-5 gap-5 underline sm:flex-col sm:items-start sm:ml-10'>
+            <Link href="https://www.cloudflare.com/de-de/cookie-policy/" target='_blank'>
               <span>Cookie-Richtlinie</span>
             </Link>
-            <Link href="#">
+            <Link href="https://policies.google.com/privacy" target='_blank'>
               <span>Datenschutzerklärung</span>
             </Link>
           </div>
@@ -108,9 +106,8 @@ const Page = () => {
         </div>
 
         <div className='bg-[#F9F9F9] px-5'>
-          <div className='flex flex-row items-center gap-3 my-5'>
-            <input type='checkbox' id="google-analytics" />
-            <label htmlFor="google-analytics">Google Analytics</label>
+          <div className='flex flex-row items-center gap-3 my-5' id="google-analytics">
+            <ToggleSwitch label="Google Analytics" showArrow={false} selected />
           </div>
           <p className={`${roboto.className} text-base sm:text-lg font-extralight text-[#828384] ml-5 my-5 px-5`}>
             Diese Cookies sammeln anonymisierte Informationen zu Analysezwecken – z. B. wie Besucher die
@@ -119,18 +116,17 @@ const Page = () => {
             Dublin 4, Irland, wenn Sie in der EU ansässig sind. Cookie-Namen:_ga, _gat und_gid)
             Cookie-Lebensdauer: 2 Jahre
           </p>
-          <div className='flex flex-row items-center gap-5 py-5'>
-            <Link href="#">
+          <div className='flex flex-row items-center gap-5 py-5 sm:flex-col sm:items-start underline sm:ml-10'>
+            <Link href="https://policies.google.com/technologies/cookies">
               <span>Cookie-Richtlinie</span>
             </Link>
-            <Link href="#">
+            <Link href="https://policies.google.com/privacy">
               <span>Datenschutzerklärung</span>
             </Link>
           </div>
         </div>
-
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }

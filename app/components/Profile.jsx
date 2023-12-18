@@ -11,7 +11,7 @@ const Profile = () => {
         <Image 
           src={ProfilePic}
           alt=''
-          className='w-60 h-60'
+          className='w-56 h-40'
         />
         <div className='flex flex-col sm:gap-3'>
           <p className={`${raleway.className} text-xl sm:text-4xl font-semibold text-white text-center`}>Andreas Zimmermann</p>

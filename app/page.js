@@ -16,7 +16,7 @@ export default function Home() {
   }, [])
 
   return (
-    <main className="relative">
+    <main className="relative pt-20">
       <div className={open ? `bg-[#A4A4A4]` : `bg-white`}>
 
       {/* navbar */}
