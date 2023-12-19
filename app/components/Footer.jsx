@@ -16,13 +16,13 @@ const Footer = () => {
       </div>
       <div className='flex flex-col justify-start items-start gap-5 flex-1 sm:items-end text-[#79797B]'>
         <Link href="/impressum">
-          <span className='underline'>Impressum</span>
+          <span className='underline'>{"Impressum"}</span>
         </Link>
         <Link href="/datenschutz">
-          <span className='underline'>Datenschutz</span>
+          <span className='underline'>{"Datenschutz"}</span>
         </Link>
         <Link href="/cookie-einstellungen">
-          <span className='underline'>Cookie-Einstellungen</span>
+          <span className='underline'>{"Cookie-Einstellungen"}</span>
         </Link>
       </div>
     </footer>

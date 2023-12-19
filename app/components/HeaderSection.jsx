@@ -15,19 +15,19 @@ const HeaderSection = () => {
           />
         </div>
         <div className='mt-20'>
-          <h1 className={`${raleway.className} text-[#383335] font-light text-md`}>Herzlich willkommen</h1>
+          <h1 className={`${raleway.className} text-[#383335] font-light text-md`}>{"Herzlich willkommen"}</h1>
           <div className='flex flex-col gap-5 text-lg'>
             <p className={`${roboto.className}`}>
-              Ich biete Paartherapie sowie Beratung für Einzelne und mehrere
+              {`Ich biete Paartherapie sowie Beratung für Einzelne und mehrere
               Personen in Orientierungsprozessen, Konfliktsituationen und Krisen.
               Meine Aufgabe sehe ich darin, Sie bei der Suche nach Lösungen zu
               begleiten. Dafür stelle ich Ihnen einen Rahmen zur Verfügung, in
               dem sich Ihr Möglichkeitsraum erweitern kann und Veränderung
-              wahrscheinlich wird.
+              wahrscheinlich wird.`}
             </p>
             <p className={`${roboto.className} `}>
-              Rufen Sie mich an oder schreiben Sie mir eine Mail für ein
-              Erstgespräch zum kennenlernen. Ich freue mich auf unsere Zusammenarbeit.
+              {`Rufen Sie mich an oder schreiben Sie mir eine Mail für ein
+              Erstgespräch zum kennenlernen. Ich freue mich auf unsere Zusammenarbeit.`}
             </p>
           </div>
         </div>
@@ -35,19 +35,19 @@ const HeaderSection = () => {
 
       <div className='hidden sm:flex sm:items-center sm:justify-center sm:h-full sm:w-screen sm:px-20 sm:py-10'>
         <div className='flex flex-col flex-1 '>
-          <h1 className={`${raleway.className} text-[#383335] font-light text-4xl`}>Herzlich willkommen</h1>
+          <h1 className={`${raleway.className} text-[#383335] font-light text-4xl`}>{"Herzlich willkommen"}</h1>
           <div className='flex flex-col gap-5 text-lg w-2/3'>
             <p className={`${roboto.className} font-light`}>
-              Ich biete Paartherapie sowie Beratung für Einzelne und mehrere
+              {`Ich biete Paartherapie sowie Beratung für Einzelne und mehrere
               Personen in Orientierungsprozessen, Konfliktsituationen und Krisen.
               Meine Aufgabe sehe ich darin, Sie bei der Suche nach Lösungen zu
               begleiten. Dafür stelle ich Ihnen einen Rahmen zur Verfügung, in
               dem sich Ihr Möglichkeitsraum erweitern kann und Veränderung
-              wahrscheinlich wird.
+              wahrscheinlich wird.`}
             </p>
             <p className={`${roboto.className} font-light`}>
-              Rufen Sie mich an oder schreiben Sie mir eine Mail für ein
-              Erstgespräch zum kennenlernen. Ich freue mich auf unsere Zusammenarbeit.
+              {`Rufen Sie mich an oder schreiben Sie mir eine Mail für ein
+              Erstgespräch zum kennenlernen. Ich freue mich auf unsere Zusammenarbeit.`}
             </p>
           </div>
         </div>

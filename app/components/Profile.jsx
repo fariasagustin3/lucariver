@@ -14,9 +14,9 @@ const Profile = () => {
           className='w-56 h-40'
         />
         <div className='flex flex-col sm:gap-3'>
-          <p className={`${raleway.className} text-xl sm:text-4xl font-semibold text-white text-center`}>Andreas Zimmermann</p>
-          <p className={`${raleway.className} text-xl sm:text-4xl font-normal text-white text-center`}>Systemische Beratung & Therapie</p>
-          <p className={`${raleway.className} text-xl sm:text-4xl font-normal text-white text-center`}>13353 Berlin Wedding</p>
+          <p className={`${raleway.className} text-xl sm:text-4xl font-semibold text-white text-center`}>{"Andreas Zimmermann"}</p>
+          <p className={`${raleway.className} text-xl sm:text-4xl font-normal text-white text-center`}>{"Systemische Beratung & Therapie"}</p>
+          <p className={`${raleway.className} text-xl sm:text-4xl font-normal text-white text-center`}>{"13353 Berlin Wedding"}</p>
         </div>
       </div>
     </section>

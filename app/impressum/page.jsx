@@ -10,10 +10,10 @@ const Page = () => {
 
       {/* content */}
       <div className={`${roboto.className} text-lg sm:text-2xl flex flex-col justify-start my-10 gap-3 px-5`}>
-        <p>Andreas Zimmermann</p>
-        <p>Systemische Beratung & Therapie</p>
-        <p>a-z@mailbox.org</p>
-        <p>0049 159 015 00 311</p>
+        <p>{"Andreas Zimmermann"}</p>
+        <p>{"Systemische Beratung & Therapie"}</p>
+        <p>{"a-z@mailbox.org"}</p>
+        <p>{"0049 159 015 00 311"}</p>
       </div>
 
       <Footer />
