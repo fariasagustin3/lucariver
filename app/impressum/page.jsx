@@ -9,7 +9,7 @@ const Page = () => {
       <Navbar />
 
       {/* content */}
-      <div className={`${roboto.className} text-lg sm:text-2xl flex flex-col justify-start my-10 gap-3 px-5`}>
+      <div className={`${roboto.className} text-lg sm:text-2xl flex flex-col justify-start my-10 gap-3 px-5 sm:py-20 sm:px-32 sm:font-light sm:text-[#79797B]`}>
         <p>{"Andreas Zimmermann"}</p>
         <p>{"Systemische Beratung & Therapie"}</p>
         <p>{"a-z@mailbox.org"}</p>
