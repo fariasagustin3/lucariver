@@ -8,8 +8,8 @@ const Page = () => {
   return (
     <div>
       <Navbar />
-      <div className='flex flex-col px-5 items-center text-center sm:mt-10 sm:px-56 pt-20'>
-        <h1 className={`${raleway.className} sm:text-5xl`}>{"Datenschutzerklärung"}</h1>
+      <div className='flex flex-col px-5 items-center text-center lg:mt-10 lg:px-56 pt-20'>
+        <h1 className={`${raleway.className} lg:text-5xl`}>{"Datenschutzerklärung"}</h1>
         <h3>{"Geltungsbereich"}</h3>
         <p>
           {`Diese Datenschutzerklärung soll die Nutzer dieser Webseite gemäß EU DSGVO, Bundesdatenschutzgesetz
@@ -106,7 +106,7 @@ const Page = () => {
           sich bitte an Andreas Zimmermann, Mail: a-z@mailbox.org, Tel: 0159 015 00 311`}
         </p>
 
-        <h2 className={`${raleway.className} sm:text-[36px] py-20 font-light`}>{"Google Analytics Ergänzung"}</h2>
+        <h2 className={`${raleway.className} lg:text-[36px] py-20 font-light`}>{"Google Analytics Ergänzung"}</h2>
         <p>
           {`Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. („Google“).
           Google Analytics verwendet sog. „Cookies“, Textdateien, die auf Ihrem Computer gespeichert

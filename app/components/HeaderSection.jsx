@@ -6,7 +6,7 @@ import { raleway, roboto } from '../fonts';
 const HeaderSection = () => {
   return (
     <section className=''>
-      <div className='sm:hidden h-full w-screen px-5 py-10'>
+      <div className='lg:hidden h-full w-screen px-5 py-10'>
         <div className='flex justify-center'>
           <Image
             src={Logo}
@@ -33,7 +33,7 @@ const HeaderSection = () => {
         </div>
       </div>
 
-      <div className='hidden sm:flex sm:items-center sm:justify-center sm:h-full sm:w-screen sm:px-20 sm:py-10'>
+      <div className='hidden lg:flex lg:items-center lg:justify-center lg:h-full lg:w-screen lg:px-20 lg:py-10'>
         <div className='flex flex-col flex-1 '>
           <h1 className={`${raleway.className} text-[#383335] font-light text-4xl`}>{"Herzlich willkommen"}</h1>
           <div className='flex flex-col gap-5 text-lg w-2/3'>

@@ -5,11 +5,11 @@ import { roboto } from '../fonts';
 
 const Page = () => {
   return (
-    <div className='py-20 sm:py-0'>
+    <div className='py-20 lg:py-0'>
       <Navbar />
 
       {/* content */}
-      <div className={`${roboto.className} text-lg sm:text-2xl flex flex-col justify-start my-10 gap-3 px-5 sm:py-20 sm:px-32 font-light text-[#79797B]`}>
+      <div className={`${roboto.className} text-lg lg:text-2xl flex flex-col justify-start my-10 gap-7 px-5 lg:py-20 lg:px-32 font-light text-[#79797B]`}>
         <p>{"Andreas Zimmermann"}</p>
         <p>{"Systemische Beratung & Therapie"}</p>
         <p>{"a-z@mailbox.org"}</p>
