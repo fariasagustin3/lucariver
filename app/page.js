@@ -16,8 +16,14 @@ export default function Home() {
   }, [])
 
   return (
-    <main className="relative pt-20">
-      <div className={open ? `bg-[#A4A4A4]` : `bg-white`}>
+    <main className={open ? `bg-[#A4A4A4] relative pt-20` : `relative pt-20 bg-white`}>
+      <div >
+      {/* modal */}
+      {open && (
+        <div className='fixed top-5 right-10 z-[100]'>
+          <Modal open={open} setOpen={setOpen} />
+        </div>
+      )}
 
       {/* navbar */}
       <Navbar />
@@ -38,10 +44,6 @@ export default function Home() {
       <Footer />
       </div>
 
-      {/* modal */}
-      {open && (
-        <Modal open={open} setOpen={setOpen} />
-      )}
     </main>
   )
 }
