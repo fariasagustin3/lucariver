@@ -38,7 +38,12 @@ const Navbar = () => {
           </button>
         )}
       </div>
-      <div className='flex items-center gap-3 lg:gap-7 lg:font-light lg:text-base z-10'>
+      <div className='truncate w-full flex items-center gap-3 lg:gap-7 lg:font-light lg:text-base z-10'>
+        <span onClick={() => goToPhone("Tel: 0159 015 00 311")} className='cursor-pointer'>{"Tel: 0159 015 00 311"}</span>
+        <span onClick={() => goToMail("Mail: a-z@mailbox.org")} className='cursor-pointer'>{"Mail: a-z@mailbox.org"}</span>
+        <span onClick={() => goToMaps("Sparrstr. 19 Berlin Wedding")} className='cursor-pointer'>{"Sparrstr. 19 Berlin Wedding"}</span>
+      </div>
+      <div className='hidden lg:flex gap-5'>
         <Link href="/">
           <span className='hover:underline cursor-pointer'>{"Home"}</span>
         </Link>
@@ -49,16 +54,20 @@ const Navbar = () => {
           <span className='hover:underline cursor-pointer'>{"Preise/Kontakt"}</span>
         </Link>
       </div>
-      <div className='hidden lg:flex gap-5'>
-        <span onClick={() => goToPhone("Tel: 0159 015 00 311")} className='cursor-pointer'>{"Tel: 0159 015 00 311"}</span>
-        <span onClick={() => goToMail("Mail: a-z@mailbox.org")} className='cursor-pointer'>{"Mail: a-z@mailbox.org"}</span>
-        <span onClick={() => goToMaps("Sparrstr. 19 Berlin Wedding")} className='cursor-pointer'>{"Sparrstr. 19 Berlin Wedding"}</span>
-      </div>
       {open && (
         <div className='absolute top-0 left-0 z-0 w-[500px] h-[1200px] bg-[#690C36] flex flex-col items-start justify-start pt-32 gap-5 text-white font-thin text-xl px-5'>
-          <span>{"Tel: 0159 015 00 311"}</span>
+          {/* <span>{"Tel: 0159 015 00 311"}</span>
           <span>{"Mail: a-z@mailbox.org"}</span>
-          <span>{"Sparrstr. 19 Berlin Wedding"}</span>
+          <span className=''>{"Sparrstr. 19 Berlin Wedding"}</span> */}
+          <Link href="/">
+            <span className='hover:underline cursor-pointer'>{"Home"}</span>
+          </Link>
+          <Link href="/ueber-micht">
+            <span className='hover:underline cursor-pointer'>{"Über micht"}</span>
+          </Link>
+          <Link href="/preise-kontakt">
+            <span className='hover:underline cursor-pointer'>{"Preise/Kontakt"}</span>
+          </Link>
         </div>
       )}
     </div>
