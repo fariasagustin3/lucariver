@@ -20,7 +20,7 @@ export default function Home() {
       <div >
       {/* modal */}
       {open && (
-        <div className='fixed top-5 right-10 z-[100]'>
+        <div className='fixed lg:top-5 lg:right-10 z-[100]'>
           <Modal open={open} setOpen={setOpen} />
         </div>
       )}

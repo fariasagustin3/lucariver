@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 
-const ToggleSwitch = ({ label, selected, link, showArrow }) => {
+const ToggleSwitch = ({ label, selected, link, showArrow, isSelected }) => {
   const [isOn, setIsOn] = useState(false);
 
   const handleClick = () => {
@@ -10,8 +10,13 @@ const ToggleSwitch = ({ label, selected, link, showArrow }) => {
   };
 
   useEffect(() => {
-    selected === true ? setIsOn(true) : setIsOn(false)
-  }, [])
+    selected === true ? setIsOn(true) : setIsOn(false);
+    if(isSelected === false) {
+      setIsOn(false);
+    } else {
+      setIsOn(true);
+    }
+  }, [isSelected])
 
   return (
     <div className='flex flex-row items-center gap-3'>
@@ -21,7 +26,6 @@ const ToggleSwitch = ({ label, selected, link, showArrow }) => {
             } relative inline-flex items-center h-6 rounded-full w-11`}
           onClick={handleClick}
           disabled={selected === true}
-
         >
           <span
             className={`${isOn ? "translate-x-6" : "translate-x-1"

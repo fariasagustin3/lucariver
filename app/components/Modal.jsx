@@ -7,8 +7,11 @@ import ToggleSwitch from './ToggleSwitch';
 
 const Modal = ({ open, setOpen }) => {
   return (
-    <div className='sticky bottom-0 bg-white px-5 py-5 lg:bottom-[30px] lg:top-0 lg:right-0 lg:left-[100%] lg:mr-6 lg:m-auto lg:w-1/4 rounded-md'>
-      <h1 className={`${raleway.className} text-lg `}>Cookie-Richtlinie</h1>
+    <div className='sticky bottom-0 bg-white px-5 py-5 lg:sticky lg:bottom-[30px] lg:top-0 lg:right-0 lg:left-[100%] lg:mr-6 lg:m-auto lg:w-1/4 rounded-md'>
+      <div className='flex flex-row items-center justify-between'>
+        <h1 className={`${raleway.className} text-lg `}>Cookie-Richtlinie</h1>
+        <button onClick={() => setOpen(false)} className='font-semibold'>X</button>
+      </div>
       <p className={`${roboto.className} text-sm text-[#8D8E8F] font-light leading-5`}>
         {`Cookies werden zur Benutzerführung und Webanalyse verwendet und helfen dabei,
         diese Website besser zu machen. Wenn du diese Seite weiter benutzt, gehen wir

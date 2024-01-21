@@ -1,11 +1,14 @@
+"use client"
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import { raleway, roboto } from '../fonts';
 import ToggleSwitch from '../components/ToggleSwitch';
 
 const Page = () => {
+  const [isOn, setIsOn] = useState(false);
+
   return (
     <div className=''>
       <Navbar />
@@ -21,8 +24,8 @@ const Page = () => {
         </div>
 
         <div className='my-5 flex flex-col w-full gap-5 lg:flex-row lg:justify-center'>
-          <button className='bg-black border-none text-white py-5 lg:px-10 lg:flex-1'>{"Alle akzeptieren"}</button>
-          <button className='bg-transparent border-[1px] border-gray text-black font-semibold py-5 lg:px-10 lg:flex-1'>{"Alle ablehnen"}</button>
+          <button onClick={() => setIsOn(true)} className='bg-black border-none text-white py-5 lg:px-10 lg:flex-1'>{"Alle akzeptieren"}</button>
+          <button onClick={() => setIsOn(false)} className='bg-transparent border-[1px] border-gray text-black font-semibold py-5 lg:px-10 lg:flex-1'>{"Alle ablehnen"}</button>
         </div>
 
         <div className='flex flex-row items-start gap-5 underline my-5'>
@@ -39,7 +42,7 @@ const Page = () => {
             <ToggleSwitch label="Unbedingt erforderlich" showArrow={false} />
           </div>
           <div className='flex flex-row items-center gap-5'>
-            <ToggleSwitch label="Performance" showArrow={false} selected />
+            <ToggleSwitch label="Performance" showArrow={false} isSelected={isOn} />
           </div>
         </div>
 
@@ -107,7 +110,7 @@ const Page = () => {
 
         <div className='bg-[#F9F9F9] px-5'>
           <div className='flex flex-row items-center gap-3 my-5' id="google-analytics">
-            <ToggleSwitch label="Google Analytics" showArrow={false} selected />
+            <ToggleSwitch label="Google Analytics" showArrow={false} isSelected={isOn} />
           </div>
           <p className={`${roboto.className} text-base lg:text-lg font-extralight text-[#828384] ml-5 my-5 px-5`}>
             {`Diese Cookies sammeln anonymisierte Informationen zu Analysezwecken – z. B. wie Besucher die
