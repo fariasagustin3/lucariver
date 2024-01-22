@@ -7,7 +7,7 @@ const TestimonialSection = () => {
         <h1 className={`${raleway.className} font-light my-20`}>Stimmen nach Therapie und Beratung</h1>
       <div className='lg:flex lg:flex-row lg:gap-10'>
         <div className='flex flex-col lg:w-1/2 h-full gap-10'>
-          <div className={`${roboto.className} text-[18px] text-[#79797B] font-light leading-7`}>
+          <div className={`${roboto.className} text-[18px] text-[#323335] font-light leading-7`}>
             <p>
               {`"Herr Zimmermann hat es durch seine wertschätzende und empathische Art geschafft,
               das Verständnis zwischen mir und meinem Partner auf eine neue Ebene zu lenken.

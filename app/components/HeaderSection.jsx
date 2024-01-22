@@ -15,9 +15,9 @@ const HeaderSection = () => {
           />
         </div>
         <div className='mt-20'>
-          <h1 className={`${raleway.className} text-[#383335] font-light text-md`}>{"Herzlich willkommen"}</h1>
+          <h1 className={`${raleway.className} text-[#323335] font-light text-[24px] lg:text-[36px]`}>{"Herzlich willkommen"}</h1>
           <div className='flex flex-col gap-5 text-lg'>
-            <p className={`${roboto.className}`}>
+            <p className={`${roboto.className} text-[16px] lg:text-[18px] text-[#323335] font-light`}>
               {`Ich biete Paartherapie sowie Beratung für Einzelne und mehrere
               Personen in Orientierungsprozessen, Konfliktsituationen und Krisen.
               Meine Aufgabe sehe ich darin, Sie bei der Suche nach Lösungen zu

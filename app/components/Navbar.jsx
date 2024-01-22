@@ -40,13 +40,13 @@ const Navbar = () => {
       </div>
       <div className='hidden lg:flex gap-5'>
         <Link href="/">
-          <span className='hover:underline cursor-pointer'>{"Home"}</span>
+          <span className='hover:underline cursor-pointer text-[16px]'>{"Home"}</span>
         </Link>
         <Link href="/ueber-micht">
-          <span className='hover:underline cursor-pointer'>{"Über micht"}</span>
+          <span className='hover:underline cursor-pointer text-[16px]'>{"Über micht"}</span>
         </Link>
         <Link href="/preise-kontakt">
-          <span className='hover:underline cursor-pointer'>{"Preise/Kontakt"}</span>
+          <span className='hover:underline cursor-pointer text-[16px]'>{"Preise/Kontakt"}</span>
         </Link>
       </div>
       <div className='truncate flex items-center gap-3 lg:gap-7 lg:font-light lg:text-base z-10'>
