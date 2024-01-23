@@ -131,7 +131,7 @@ const SliderSection = () => {
       >
         {/* here you can also pass any other element attributes. Also, you can use your custom components as slides */}
         {slides.map((slide) => (
-          <div className="w-screen h-[500px] bg-[#6D6D6D] flex flex-col items-center justify-center">
+          <div key={slide.id} className="w-screen h-[500px] bg-[#6D6D6D] flex flex-col items-center justify-center">
             <p className="text-2xl w-2/3 text-white lg:text-4xl lg:w-1/3 text-center">
               Die Veränderung steht vor der Tür - lassen wir sie zu?!
             </p>
