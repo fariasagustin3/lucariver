@@ -9,11 +9,11 @@ const Page = () => {
       <Navbar />
 
       {/* content */}
-      <div className={`${roboto.className} text-lg lg:text-2xl flex flex-col justify-start my-10 gap-7 px-5 lg:py-20 lg:px-32 font-light text-[#79797B]`}>
-        <p>{"Andreas Zimmermann"}</p>
-        <p>{"Systemische Beratung & Therapie"}</p>
-        <p>{"a-z@mailbox.org"}</p>
-        <p>{"0049 159 015 00 311"}</p>
+      <div className={`${roboto.className} text-lg lg:text-2xl flex flex-col justify-start my-10 px-5 lg:py-20 lg:px-56 font-light text-[#323335]`}>
+        <p className='text-[18px]'>{"Andreas Zimmermann"}</p>
+        <p className='text-[18px]'>{"Systemische Beratung & Therapie"}</p>
+        <p className='text-[18px]'>{"a-z@mailbox.org"}</p>
+        <p className='text-[18px]'>{"0049 159 015 00 311"}</p>
       </div>
 
       <Footer />

@@ -17,7 +17,7 @@ const TestimonialSection = () => {
             </p>
             <p>{"Fabienne Sponheimer 21.11.2022"}</p>
           </div>
-          <div className={`${roboto.className} text-[18px] text-[#79797B] font-light leading-7`}>
+          <div className={`${roboto.className} text-[18px] text-[#323335] font-light leading-7`}>
             <p>
               {`"Herr Zimmermann hat uns wunderbar und intensiv über viele Monate im Rahmen einer
               Paartherapie begleitet. Ich hatte von Anfang an das Gefühl einen sicheren und unparteiischen
@@ -29,7 +29,7 @@ const TestimonialSection = () => {
             </p>
             <p>{"Lars am 18.11.2022"}</p>
           </div>
-          <div className={`${roboto.className} text-[18px] text-[#79797B] font-light leading-7`}>
+          <div className={`${roboto.className} text-[18px] text-[#323335] font-light leading-7`}>
             <p>
               {`"Die Gespräche mit Herrn Zimmermann haben mir sehr geholfen, Züge meiner Persönlichkeit
               und meines Charakters besser zu verstehen und annehmen zu können. Dank der Gespräche mit
@@ -39,7 +39,7 @@ const TestimonialSection = () => {
             </p>
             <p>{"Jakob am 10.10.2021"}</p>
           </div>
-          <div className={`${roboto.className} text-[18px] text-[#79797B] font-light leading-7`}>
+          <div className={`${roboto.className} text-[18px] text-[#323335] font-light leading-7`}>
             <p>
               {`"Gleich bei der ersten Therapiesitzung haben wir uns sofort wohlgefühlt. Herr Zimmermann
               besitzt eine große Empathie. Bei den oftmals doch sehr emotionalen Gesprächen, agierte
